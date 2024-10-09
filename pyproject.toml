@@ -19,7 +19,7 @@ pythonVersion = "3.10"
 
 # packaging
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=75.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -44,7 +44,7 @@ Issues =  "https://github.com/ernieIzde8ski/pseudorust/issues"
 
 [tool.setuptools.dynamic]
 dependencies = { file = "requirements.txt" }
-version = { attr = "pseudorust.version.__version__" }
+version = { attr = "pseudorust.info.__version__" }
 
 [tool.setuptools.packages.find]
 where = ["src"]
